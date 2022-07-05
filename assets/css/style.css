@@ -1,0 +1,141 @@
+:root {
+  --white-color: #f8fafc;
+  --black-color: #000;
+  --text-color: #333;
+  --primary-color: #60a5fa;
+  --primary-darker-color: #3b82f6;
+  --main-background-color: #e2e8f0;
+  --side-card-color: #facc15;
+  --border-radius: 8px;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.grid-container {
+  min-height: 100vh;
+  font-size: 1.6rem;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main";
+}
+
+/* ---- Header ----*/
+.header {
+  grid-area: header;
+  background-color: var(--white-color);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 0.8rem 3rem;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.header__search form {
+  display: flex;
+  gap: 1rem;
+}
+
+.header__search form img {
+  position: relative;
+  top: 0.5rem;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.header__search form > #search {
+  padding: 0.8rem;
+  flex: 1;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--main-background-color);
+}
+
+div[class$="avatar"] > img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  max-width: 3rem;
+}
+
+.header__notification {
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.header__notification .notification__name {
+  font-weight: 500;
+}
+
+.header__user-info {
+  display: grid;
+  grid-template-columns: 0.7fr 5fr;
+  grid-template-areas:
+    "avatar user-info"
+    "avatar user-info";
+  align-items: center;
+}
+
+.user-info__avatar {
+  grid-area: avatar;
+}
+
+.avatar-big > img {
+  max-width: 6.5rem;
+}
+
+.header__user-name {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.header__user-greeting {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.header__action {
+  display: flex;
+  justify-content: space-between;
+}
+
+.primary-btn {
+  padding: 0.5em 1.6em;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: var(--border-radius);
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--primary-darker-color)
+  );
+}
+
+.main-content {
+  grid-area: main;
+  background-color: var(--main-background-color);
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/favicon.svg"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <header class="header">
+        <div class="header__search">
+          <form action="#" method="get">
+            <label for="search">
+              <img src="./assets/icons/search.svg" alt="search-icon" />
+            </label>
+            <input type="search" name="searchInput" id="search" />
+          </form>
+        </div>
+        <div class="header__notification">
+          <div class="notification__icon">
+            <img src="./assets/icons/bell.svg" alt="notification-icon" />
+          </div>
+          <div class="notification__avatar">
+            <img src="./assets/img/user-avatar.png" alt="user-avatar" />
+          </div>
+          <p class="notification__name">Morgan Oakley</p>
+        </div>
+        <div class="header__user-info">
+          <div class="user-info__avatar avatar-big">
+            <img src="./assets/img/user-avatar.png" alt="user-avatar" />
+          </div>
+          <p class="header__user-greeting">Hi there,</p>
+          <p class="header__user-name">Morgan Oakley (@morgan)</p>
+        </div>
+        <div class="header__action">
+          <button class="primary-btn">New</button>
+          <button class="primary-btn">Upload</button>
+          <button class="primary-btn">Share</button>
+        </div>
+      </header>
+      <nav class="sidebar"></nav>
+      <main class="main-content"></main>
+    </div>
+  </body>
+</html>
