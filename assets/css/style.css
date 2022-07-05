@@ -68,10 +68,11 @@ body {
   background-color: var(--main-background-color);
 }
 
-div[class$="avatar"] > img {
+div[class$="__avatar"] > img {
   aspect-ratio: 1/1;
   object-fit: cover;
   max-width: 3rem;
+  border-radius: 50%;
 }
 
 .header__notification {
@@ -100,7 +101,7 @@ div[class$="avatar"] > img {
   grid-area: avatar;
 }
 
-.avatar-big > img {
+.user-info__avatar > #big-avatar {
   max-width: 7rem;
 }
 
