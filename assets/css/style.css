@@ -87,6 +87,7 @@ div[class$="avatar"] > img {
 }
 
 .header__user-info {
+  width: min(64rem, 100%);
   display: grid;
   grid-template-columns: 0.7fr 5fr;
   grid-template-areas:
@@ -100,7 +101,7 @@ div[class$="avatar"] > img {
 }
 
 .avatar-big > img {
-  max-width: 6.5rem;
+  max-width: 7rem;
 }
 
 .header__user-name {
@@ -114,6 +115,8 @@ div[class$="avatar"] > img {
 }
 
 .header__action {
+  justify-self: end;
+  width: min(32rem, 100%);
   display: flex;
   justify-content: space-between;
 }
