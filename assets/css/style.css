@@ -163,7 +163,7 @@ div[class$="__avatar"] > img {
 .sidebar__action {
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
+  gap: 2rem;
 }
 
 .sidebar a {
