@@ -64,6 +64,8 @@ html {
   background-color: var(--main-background-color);
 }
 
+img[alt$="icon"],
+div[class$="__logo"] > img,
 div[class$="__avatar"] > img {
   aspect-ratio: 1/1;
   object-fit: cover;
@@ -98,7 +100,7 @@ div[class$="__avatar"] > img {
   padding-right: 0.5rem;
 }
 
-.user-info__avatar > #big-avatar {
+#big-avatar > img {
   max-width: 7rem;
 }
 
@@ -128,13 +130,53 @@ div[class$="__avatar"] > img {
   border-radius: var(--border-radius);
 }
 
+/* ---- Sidebar ---- */
+
 .sidebar {
+  padding: 0.8rem 2rem;
   grid-area: sidebar;
   background: linear-gradient(
     to right,
     var(--primary-color),
     var(--primary-darker-color)
   );
+  display: grid;
+  grid-template-rows: 1fr repeat(2, 4fr);
+  color: var(--white-color);
+}
+
+.sidebar > .sidebar__hero {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.sidebar__hero > .hero__name {
+  position: relative;
+  top: 1rem;
+}
+
+#big-logo > img {
+  max-width: 10rem;
+}
+
+.sidebar__nav,
+.sidebar__action {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.sidebar a {
+  color: var(--white-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 500;
+}
+
+.sidebar a > img {
+  max-width: 2rem;
 }
 
 .main-content {
