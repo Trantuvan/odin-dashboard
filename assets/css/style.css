@@ -26,7 +26,7 @@ html {
   min-height: 100vh;
   font-size: 1.6rem;
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr 5fr;
   grid-template-areas:
     "sidebar header"
@@ -147,7 +147,7 @@ div[class$="__avatar"] > img {
     var(--primary-darker-color)
   );
   display: grid;
-  grid-template-rows: 1fr repeat(2, 4fr);
+  grid-template-rows: 1fr 3fr 4fr;
   color: var(--white-color);
 }
 
