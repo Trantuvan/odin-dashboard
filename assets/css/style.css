@@ -93,6 +93,7 @@ div[class$="__avatar"] > img {
     "avatar user-info"
     "avatar user-info";
   align-items: center;
+  gap: 0.5rem;
 }
 
 .user-info__avatar {
@@ -107,6 +108,11 @@ div[class$="__avatar"] > img {
 .header__user-name {
   font-size: 2.4rem;
   font-weight: 700;
+}
+
+.header__user-name > span {
+  font-size: 1.6rem;
+  font-weight: 500;
 }
 
 .header__user-greeting {
