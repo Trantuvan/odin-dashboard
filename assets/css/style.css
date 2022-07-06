@@ -16,10 +16,6 @@ html {
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-}
-
 *,
 *::before,
 *::after {
@@ -88,9 +84,9 @@ div[class$="__avatar"] > img {
 }
 
 .header__user-info {
-  width: min(64rem, 100%);
+  width: min(50rem, 100%);
   display: grid;
-  grid-template-columns: 0.7fr 5fr;
+  grid-template-columns: 1fr 5fr;
   grid-template-areas:
     "avatar user-info"
     "avatar user-info";
@@ -99,6 +95,7 @@ div[class$="__avatar"] > img {
 
 .user-info__avatar {
   grid-area: avatar;
+  padding-right: 0.5rem;
 }
 
 .user-info__avatar > #big-avatar {
@@ -120,6 +117,7 @@ div[class$="__avatar"] > img {
   width: min(32rem, 100%);
   display: flex;
   justify-content: space-between;
+  gap: 0.8rem;
 }
 
 .primary-btn {
